@@ -73,22 +73,22 @@ period = st.multiselect('Averaging period: ', ['Daily', 'Weekly', 'Monthly'], de
 #using the grouping interval selected. 
 if 'Daily' in period:
   df_visu = (df_daily.loc[start_date:end_date])
-  st.line_chart(df_visu,x = 'Time', y = 'Daily consumption (kWh)', y_label = 'Electricity consumptions [kWh]',x_label = 'Time')
-  st.line_chart(df_visu,x = 'Time', y = 'Price (cent/kWh)', y_label = 'Electricity price [cents]',x_label = 'Time')
-  st.line_chart(df_visu,x = 'Time', y = 'Bill (€/day)', y_label = 'Electricity bill [€]',x_label = 'Time')
+  st.line_chart(df_visu,x = 'Time', y = 'Daily consumption (kWh)', y_label = 'Electricity consumptions [kWh/day]',x_label = 'Time')
+  st.line_chart(df_visu,x = 'Time', y = 'Price (cent/kWh)', y_label = 'Electricity price [cents/kWh]',x_label = 'Time')
+  st.line_chart(df_visu,x = 'Time', y = 'Bill (€/day)', y_label = 'Electricity bill [€/day]',x_label = 'Time')
   st.line_chart(df_visu,x = 'Time', y = 'Temperature', y_label = 'Temperature [C]',x_label = 'Time')
 
 if 'Weekly' in period:
   df_visu = (df_weekly.loc[start_date:end_date])
-  st.line_chart(df_visu,x = 'Time', y = 'Weekly consumption (kWh)', y_label = 'Electricity consumptions [kWh]',x_label = 'Time')
-  st.line_chart(df_visu,x = 'Time', y = 'Price (cent/kWh)', y_label = 'Electricity price [cents]',x_label = 'Time')
-  st.line_chart(df_visu,x = 'Time', y = 'Bill (€/weekly)', y_label = 'Electricity bill [€]',x_label = 'Time')
+  st.line_chart(df_visu,x = 'Time', y = 'Weekly consumption (kWh)', y_label = 'Electricity consumptions [kWh/week]',x_label = 'Time')
+  st.line_chart(df_visu,x = 'Time', y = 'Price (cent/kWh)', y_label = 'Electricity price [cents/kWh]',x_label = 'Time')
+  st.line_chart(df_visu,x = 'Time', y = 'Bill (€/weekly)', y_label = 'Electricity bill [€/week]',x_label = 'Time')
   st.line_chart(df_visu,x = 'Time', y = 'Temperature', y_label = 'Temperature [C]',x_label = 'Time')
 
 if 'Monthly' in period:
   df_visu = (df_monthly.loc[start_date:end_date])
-  st.line_chart(df_visu,x = 'Time', y = 'Monthly consumption (kWh)', y_label = 'Electricity consumptions [kWh]',x_label = 'Time')
-  st.line_chart(df_visu,x = 'Time', y = 'Price (cent/kWh)', y_label = 'Electricity price [cents]',x_label = 'Time')
-  st.line_chart(df_visu,x = 'Time', y = 'Bill (€/month)', y_label = 'Electricity bill [€]',x_label = 'Time')
+  st.line_chart(df_visu,x = 'Time', y = 'Monthly consumption (kWh)', y_label = 'Electricity consumptions [kWh/month]',x_label = 'Time')
+  st.line_chart(df_visu,x = 'Time', y = 'Price (cent/kWh)', y_label = 'Electricity price [cents/kWh]',x_label = 'Time')
+  st.line_chart(df_visu,x = 'Time', y = 'Bill (€/month)', y_label = 'Electricity bill [€/month]',x_label = 'Time')
   st.line_chart(df_visu,x = 'Time', y = 'Temperature', y_label = 'Temperature [C]',x_label = 'Time')
 
